@@ -4,6 +4,8 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Home } from '../pages/home/home';
 import { About } from '../pages/about/about';
+import { Experience } from '../pages/experience/experience';
+import { Creation } from '../pages/creation/creation';
 import { Contact } from '../pages/contact/contact';
 
 
@@ -24,6 +26,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: Home },
       { title: 'A propos de moi', component: About },
+      { title: 'Expérience', component: Experience },
+      { title: 'Réalisations', component: Creation },
       { title: 'Contact', component: Contact }
     ];
 

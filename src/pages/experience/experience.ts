@@ -1,31 +1,31 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {About} from '../about/about';
 import {Home} from '../home/home';
-import {Contact} from '../contact/contact';
 import {Creation} from '../creation/creation';
-import {Experience} from '../experience/experience';
+import {Contact} from '../contact/contact';
 
 /*
-  Generated class for the About page.
+  Generated class for the Experience page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-about',
-  templateUrl: 'about.html'
+  selector: 'page-experience',
+  templateUrl: 'experience.html'
 })
-export class About {
+export class Experience {
 
-  home = Home;
+  about = About;
   contact = Contact;
-  experience = Experience;
+  home = Home;
   creation = Creation;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AboutPage');
+    console.log('ionViewDidLoad ExperiencePage');
   }
 
 }

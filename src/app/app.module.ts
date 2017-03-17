@@ -3,6 +3,8 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { Home } from '../pages/home/home';
 import { About } from '../pages/about/about';
+import { Experience } from '../pages/experience/experience';
+import { Creation } from '../pages/creation/creation';
 import { Contact } from '../pages/contact/contact';
 
 @NgModule({
@@ -10,6 +12,8 @@ import { Contact } from '../pages/contact/contact';
     MyApp,
     Home,
     About,
+    Experience,
+    Creation,
     Contact
   ],
   imports: [
@@ -20,6 +24,8 @@ import { Contact } from '../pages/contact/contact';
     MyApp,
     Home,
     About,
+    Experience,
+    Creation,
     Contact
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

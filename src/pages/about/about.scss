@@ -1,3 +1,9 @@
 page-about {
-
+    .customAction {
+        text-decoration: none;
+        color: white;
+    }
+    .customAction:hover {
+        color: #ff6500;
+    }
 }

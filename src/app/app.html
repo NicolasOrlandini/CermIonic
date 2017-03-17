@@ -18,9 +18,25 @@
 
   <ion-content>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+      <button [navPush]="home">
+        Home
       </button>
+      <button [navPush]="about"> <!-- menuClose ion-item -->
+        A propos de moi
+      </button>
+      <button [navPush]="experience">
+        Expérience professionnelle
+      </button>
+      <button [navPush]="creation">
+        Réalisations
+      </button>
+      <button [navPush]="contact">
+        Contact
+      </button>
+      <!-- Pattern de base -->
+      <!--<button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>-->
     </ion-list>
   </ion-content>
 
@@ -28,3 +44,8 @@
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<ion-footer>
+    <ion-toolbar color="orange">
+        <ion-title>© 2017 Valentin LEON &amp; Nicolas ORLANDINI</ion-title>
+    </ion-toolbar>
+</ion-footer>

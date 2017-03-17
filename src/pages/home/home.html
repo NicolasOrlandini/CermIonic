@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar color="orange">
         <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -30,117 +30,100 @@
         </ion-card-content>
 
     </ion-card>
-    <!--<main>
-        <div class="col s12 m7" style="margin-top:100px;">
-            <div class="card horizontal">
-                <div class="card-image">
-                    <img style="width:100px; height:150px;" src="../../assets/scott.png">
-                </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <p>Valentin</p>
-                        <p>LEON</p>
-                    </div>
-                    <div class="card-action">
-                        <p><i>Bow ties are cool</i> - The Doctor</p>
-                    </div>
-                </div>
-                <span class="card-title activator" style="color:black;"><ion-icon class="material-icons right" name="more"></ion-icon></span>
-
-                <div class="card-reveal" style="overflow:hidden;">
-                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                    <div class="horizontal">
-                        <div class="card-image" style="float:left;">
-                            <img style="width:100px; height:150px;" src="../../assets/tardis.png">
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <p>Nicolas</p>
-                                <p>ORLANDINI</p>
-                            </div>
-                            <div class="card-action">
-                                <p><i>The truth is out there</i> - Fox Mulder</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="containerParent">
+        <div id="map"></div>
+        <div class="inner box1">
+            <a href="/about.html"><span class="parent"><ion-icon name="person" class="customIcon"></ion-icon></span></a>
         </div>
-        <a class="btn-floating btn-large waves-effect waves-light red" id="closeBtn" style="position: absolute; margin-left: 5px; margin-top: 5px; display: none; float: right;"><i class="material-icons">close</i></a>
-        <div class="containerParent">
+
+        <div class="inner box2">
+            <a href="#"><span class="parent"><ion-icon id="location"class="customIcon" onclick="showCloseButton('closeBtn');" name="locate"></ion-icon></span></a>
+        </div>
+
+        <div class="inner box3">
+            <a href="/contact.html"><span class="parent"><ion-icon name="mail" class="customIcon"></ion-icon></span></a>
+        </div>
+    </div>
+    <!--<ion-col>
+        <ion-row>
             <div id="map"></div>
-            <div class="inner box1">
-                <a href="/about.html"><span class="parent"><i class="medium material-icons customIcon">perm_identity</i></span></a>
-            </div>
+            <ion-col col-md-3>
+                <div class="inner box1">
+                    <a href="/about.html"><span class="parent"><ion-icon name="person" class="customIcon"></ion-icon></span></a>
+                </div>
+            </ion-col>
+            <ion-col col-md-3>
+                <div class="inner box2">
+                    <a href="#"><span class="parent"><ion-icon id="location"class="customIcon" onclick="showCloseButton('closeBtn');" name="locate"></ion-icon></span></a>
+                </div>
+            </ion-col>
+            <ion-col col-md-3>
+                <div class="inner box3">
+                    <a href="/contact.html"><span class="parent"><ion-icon name="mail" class="customIcon"></ion-icon></span></a>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-col>-->
 
-            <div class="inner box2">
-                <a href="#"><span class="parent"><i id="location" class="medium material-icons customIcon" onclick="showCloseButton('closeBtn');">location_on</i></span></a>
-            </div>
-
-            <div class="inner box3">
-                <a href="/contact.html"><span class="parent"><i class="medium material-icons customIcon">email</i></span></a>
-            </div>
-        </div>
-
-        <div style="display: inline-block; margin:15px; margin-left: 27%;">
-            <span class="spanPhone" style="position:relative; font-size:25px; font-weight:bold; margin-left:29%;">
+    <div style="display: inline-block; margin:15px; margin-left: 27%;">
+        <span class="spanPhone" style="position:relative; font-size:25px; font-weight:bold; margin-left:29%;">
                 <img style="position:relative;margin-right: -20px;" class="circle avatarHome" src="../../assets/bender.png">
-                <ion-icon class="small material-icons iconPhone" style="top:15px;" name="call"></ion-icon><span class="telephone">06.73.17.49.70</span>
-            </span><br>
-            <span class="address" style="margin-left:45%;">31 Avenue Frédéric Mistral</span><br>
-            <span class="city" style="margin-left:50%;">06130 Grasse</span>
-        </div>
+                <ion-icon name="call" class="small iconPhone" style="top:15px;"></ion-icon><span class="telephone">06.73.17.49.70</span>
+        </span><br>
+        <span class="address" style="margin-left:45%;">31 Avenue Frédéric Mistral</span><br>
+        <span class="city" style="margin-left:50%;">06130 Grasse</span>
+    </div>
 
-        <div class="grid">
-            <a href="https://www.facebook.com/profile.php?id=100013942627955" target="_blank">
-                <div class="one-one parent">
-                    <img class="center-align" src="../../assets/icon/facebook.png" alt="">
-                </div>
-            </a>
+    <div class="grid">
+        <a href="https://www.facebook.com/profile.php?id=100013942627955" target="_blank">
+            <div class="one-one parent">
+                <img class="center-align" src="../../assets/icon/facebook.png" alt="">
+            </div>
+        </a>
 
-            <a href="https://www.linkedin.com/in/nicolas-orlandini-1b3871129/?locale=fr_FR">
-                <div class="one-two parent">
-                    <img class="center-align" src="../../assets/icon/linkedin.png" alt="">
-                </div>
-            </a>
+        <a href="https://www.linkedin.com/in/nicolas-orlandini-1b3871129/?locale=fr_FR">
+            <div class="one-two parent">
+                <img class="center-align" src="../../assets/icon/linkedin.png" alt="">
+            </div>
+        </a>
 
-            <a href="#">
-                <div class="two-one parent">
-                    <img class="center-align" src="../../assets/icon/googleplus.png" alt="">
-                </div>
-            </a>
+        <a href="#">
+            <div class="two-one parent">
+                <img class="center-align" src="../../assets/icon/googleplus.png" alt="">
+            </div>
+        </a>
 
-            <a href="https://twitter.com/SinguFuret" target="_blank">
-                <div class="two-two parent">
-                    <img class="center-align" src="../../assets/icon/twitter.png" alt="">
+        <a href="https://twitter.com/SinguFuret" target="_blank">
+            <div class="two-two parent">
+                <img class="center-align" src="../../assets/icon/twitter.png" alt="">
+            </div>
+        </a>
+    </div>
+
+    <!--<span class="card-title activator" style="color:black;"><ion-icon class="material-icons right" name="more"></ion-icon></span>
+
+    <div class="card-reveal" style="overflow:hidden;">
+        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+        <div class="horizontal">
+            <div class="card-image" style="float:left;">
+                <img style="width:100px; height:150px;" src="../../assets/tardis.png">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>Nicolas</p>
+                    <p>ORLANDINI</p>
                 </div>
-            </a>
-        </div>
-    </main>-->
-    <!--<footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">CV Cerm</h5>
-                    <p class="grey-text text-lighten-4">Application CV Progressive Web App.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Liens</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
-                        <li><a class="grey-text text-lighten-3" href="about.html">A propos de moi</a></li>
-                        <li><a class="grey-text text-lighten-3" href="experience.html">Expériences professionnelles</a></li>
-                        <li><a class="grey-text text-lighten-3" href="schooling.html">Formations</a></li>
-                        <li><a class="grey-text text-lighten-3" href="skill.html">Compétences</a></li>
-                        <li><a class="grey-text text-lighten-3" href="creation.html">Réalisations</a></li>
-                    </ul>
+                <div class="card-action">
+                    <p><i>The truth is out there</i> - Fox Mulder</p>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2017 Copyright Valentin LEON &amp; Nicolas Orlandini
-            </div>
-        </div>
-    </footer>-->
+    </div>
+    </div>
+    </div>-->
 </ion-content>
+<ion-footer>
+    <ion-toolbar color="orange">
+        <ion-title>© 2017 Valentin LEON &amp; Nicolas Orlandini</ion-title>
+    </ion-toolbar>
+</ion-footer>

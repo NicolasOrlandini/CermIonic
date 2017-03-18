@@ -1,0 +1,92 @@
+page-skill {
+
+    .cardStyleSkill {
+        color: #fafafa;
+    }
+
+    .skillTitle {
+        color: white;
+        padding: 10px;
+    }
+
+    .skillLangageTitle {
+        background-color: #f4511e;
+    }
+
+    .skillOutilsTitle {
+        background-color: #00acc1;
+    }
+
+    .skillIdeTitle {
+        background-color: #8e24aa;
+    }
+
+    #progress{
+        margin: 20px;
+    }
+
+    progress {
+        display: inline-block;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        width: 100%;
+        height: 20px;
+        padding: 3px 3px 2px 3px;
+        border-radius: 15px;
+    }
+
+    .langage{
+        background: #fbe9e7; 
+        background: -webkit-linear-gradient(#fbe9e7,#fbe9e7);
+        background:    -moz-linear-gradient(#fbe9e7,#fbe9e7);
+        background:      -o-linear-gradient(#fbe9e7,#fbe9e7);
+        background:         linear-gradient(#fbe9e7,#fbe9e7);
+        border: 1px solid #fbe9e7;
+        box-shadow: 0 1px 0 #fbe9e7;   
+    }
+
+    .outils{
+        background: #e0f7fa; 
+        background: -webkit-linear-gradient(#e0f7fa,#e0f7fa);
+        background:    -moz-linear-gradient(#e0f7fa,#e0f7fa);
+        background:      -o-linear-gradient(#e0f7fa,#e0f7fa);
+        background:         linear-gradient(#e0f7fa,#e0f7fa);
+        border: 1px solid #e0f7fa;
+        box-shadow: 0 1px 0 #e0f7fa;   
+    }
+
+    .ide{
+        background: #f3e5f5; 
+        background: -webkit-linear-gradient(#f3e5f5,#f3e5f5);
+        background:    -moz-linear-gradient(#f3e5f5,#f3e5f5);
+        background:      -o-linear-gradient(#f3e5f5,#f3e5f5);
+        background:         linear-gradient(#f3e5f5,#f3e5f5);
+        border: 1px solid #f3e5f5;
+        box-shadow: 0 1px 0 #f3e5f5;  
+    }
+
+    progress::-webkit-progress-bar{
+        background: transparent;
+    }
+
+    progress::-webkit-progress-value{
+        border-radius:10px;
+        background-size: 100% 20px, auto, auto;
+        background-position: -300px 0, top, top;
+        background-position: top right, top, top;
+    }
+
+    .langage::-webkit-progress-value{
+        background: #f4511e;
+    }
+
+    .outils::-webkit-progress-value{
+        background: #00acc1;
+    }
+
+    .ide::-webkit-progress-value{
+        background: #8e24aa;
+    }
+
+
+}

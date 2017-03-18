@@ -4,6 +4,7 @@ import { MyApp } from './app.component';
 import { Home } from '../pages/home/home';
 import { About } from '../pages/about/about';
 import { Experience } from '../pages/experience/experience';
+import { Skill } from '../pages/skill/skill';
 import { Creation } from '../pages/creation/creation';
 import { Contact } from '../pages/contact/contact';
 
@@ -13,6 +14,7 @@ import { Contact } from '../pages/contact/contact';
     Home,
     About,
     Experience,
+    Skill,
     Creation,
     Contact
   ],
@@ -25,6 +27,7 @@ import { Contact } from '../pages/contact/contact';
     Home,
     About,
     Experience,
+    Skill,
     Creation,
     Contact
   ],

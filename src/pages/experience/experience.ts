@@ -4,6 +4,7 @@ import {About} from '../about/about';
 import {Home} from '../home/home';
 import {Creation} from '../creation/creation';
 import {Contact} from '../contact/contact';
+import { Skill } from '../skill/skill';
 
 /*
   Generated class for the Experience page.
@@ -21,11 +22,12 @@ export class Experience {
   contact = Contact;
   home = Home;
   creation = Creation;
+  skill = Skill;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ExperiencePage');
+    console.log('ionViewDidLoad Experience');
   }
 
 }

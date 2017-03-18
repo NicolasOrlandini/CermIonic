@@ -5,6 +5,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { Home } from '../pages/home/home';
 import { About } from '../pages/about/about';
 import { Experience } from '../pages/experience/experience';
+import { Skill } from '../pages/skill/skill';
 import { Creation } from '../pages/creation/creation';
 import { Contact } from '../pages/contact/contact';
 
@@ -27,6 +28,7 @@ export class MyApp {
       { title: 'Home', name: 'home', component: Home },
       { title: 'A propos de moi', name: 'contact', component: About },
       { title: 'Expérience', name: 'briefcase', component: Experience },
+      { title: 'Compétences', name: 'bulb', component: Skill },
       { title: 'Réalisations', name: 'build', component: Creation },
       { title: 'Contact', name: 'mail', component: Contact }
     ];

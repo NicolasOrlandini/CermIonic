@@ -18,26 +18,10 @@
 
   <ion-content>
     <ion-list>
-      <button menuClose ion-item [navPush]="home">
-        <ion-icon name="home"></ion-icon> Home
-      </button>
-      <button menuClose ion-item [navPush]="about"> <!-- menuClose ion-item -->
-        <ion-icon name="contact"></ion-icon> A propos de moi
-      </button>
-      <button menuClose ion-item [navPush]="experience">
-        <ion-icon name="briefcase"></ion-icon> Expérience professionnelle
-      </button>
-      <button menuClose ion-item [navPush]="creation">
-        <ion-icon name="build"></ion-icon> Réalisations
-      </button>
-      <hr>
-      <button menuClose ion-item [navPush]="contact">
-        <ion-icon name="mail"></ion-icon> Contact
-      </button>
-      <!-- Pattern de base -->
-      <!--<button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon name="{{p.name}}"></ion-icon>
         {{p.title}}
-      </button>-->
+      </button>
     </ion-list>
   </ion-content>
 

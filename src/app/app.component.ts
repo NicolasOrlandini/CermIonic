@@ -17,18 +17,18 @@ export class MyApp {
 
   rootPage: any = Home;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, name: string, component: any}>;
 
   constructor(public platform: Platform) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: Home },
-      { title: 'A propos de moi', component: About },
-      { title: 'Expérience', component: Experience },
-      { title: 'Réalisations', component: Creation },
-      { title: 'Contact', component: Contact }
+      { title: 'Home', name: 'home', component: Home },
+      { title: 'A propos de moi', name: 'contact', component: About },
+      { title: 'Expérience', name: 'briefcase', component: Experience },
+      { title: 'Réalisations', name: 'build', component: Creation },
+      { title: 'Contact', name: 'mail', component: Contact }
     ];
 
   }

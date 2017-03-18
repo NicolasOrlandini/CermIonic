@@ -2,8 +2,48 @@ page-about {
     .customAction {
         text-decoration: none;
         color: white;
+        font-size: 20px;
+        transition: color 0.5s ease;
     }
     .customAction:hover {
-        color: #ff6500;
+        color: orange;
+    }
+
+    .cardHr {
+        margin-top: 25px;
+        color: #607d8b !important;
+    }
+
+    .whiteText {
+        color: white;
+    }
+
+    .cardStyle {
+        margin-bottom:50px; 
+        background-color:#607d8b !important;
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+        padding: 10px;
+        width: auto !important;
+    }
+
+    .avatar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:100px;
+        height:150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        text-align:center;
+        font-size: 40px;
+        padding : 20px;
+    }
+
+    .githubLink {
+        float:right;
     }
 }

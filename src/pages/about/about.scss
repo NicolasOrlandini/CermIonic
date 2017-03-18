@@ -5,6 +5,7 @@ page-about {
         font-size: 20px;
         transition: color 0.5s ease;
     }
+
     .customAction:hover {
         color: orange;
     }
@@ -14,18 +15,6 @@ page-about {
         color: #607d8b !important;
     }
 
-    .whiteText {
-        color: white;
-    }
-
-    .cardStyle {
-        margin-bottom:50px; 
-        background-color:#607d8b !important;
-        margin-left: 10% !important;
-        margin-right: 10% !important;
-        padding: 10px;
-        width: auto !important;
-    }
 
     .avatar {
         display: block;
@@ -41,9 +30,5 @@ page-about {
         text-align:center;
         font-size: 40px;
         padding : 20px;
-    }
-
-    .githubLink {
-        float:right;
     }
 }

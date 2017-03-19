@@ -15,6 +15,10 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+div.scroll-content {
+    overflow-y: hidden;
+}
+
 /* Footer */
 
 .toolbar-title-md {
@@ -67,25 +71,29 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
-.side-nav .userView {
+.header-md::after {
+    display: none;
+}
+
+.userView {
     position: relative;
     padding: 32px 32px 0;
     margin-bottom: 8px;
 }
 
-.side-nav .userView>a {
+.userView>a {
     height: auto;
     padding: 0;
 }
 
-.side-nav .userView>a:hover {
+.userView>a:hover {
     background-color: transparent;
 }
 
-.side-nav .userView .background {
+.userView .background {
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -95,29 +103,30 @@
     z-index: -1;
 }
 
-.side-nav .userView .circle,
-.side-nav .userView .name,
-.side-nav .userView .email {
+.userView .circle,
+.userView .name,
+.userView .email {
     display: block;
+    margin-bottom: -5px;
 }
 
-.side-nav .userView .circle {
+.userView .circle {
     height: 86px;
     width: 86px;
 }
 
-.side-nav .userView .name,
-.side-nav .userView .email {
+.userView .name,
+.userView .email {
     font-size: 14px;
     line-height: 24px;
 }
 
-.side-nav .userView .name {
+ .userView .name {
     margin-top: 16px;
     font-weight: 500;
 }
 
-.side-nav .userView .email {
+ .userView .email {
     padding-bottom: 16px;
     font-weight: 400;
 }
@@ -135,7 +144,7 @@ div {
 }
 
 
-    .whiteText {
+    .white-text {
         color: white !important;
     }
 

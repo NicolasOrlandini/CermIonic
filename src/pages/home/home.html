@@ -33,7 +33,7 @@
     <div class="containerParent">
         <div id="map"></div>
         <div class="inner box1">
-            <a href="/about.html"><span class="parent"><ion-icon name="person" class="customIcon"></ion-icon></span></a>
+            <a href="#"><span class="parent"><ion-icon name="person" class="customIcon" [navPush]="about"></ion-icon></span></a>
         </div>
 
         <div class="inner box2">
@@ -41,29 +41,9 @@
         </div>
 
         <div class="inner box3">
-            <a href="/contact.html"><span class="parent"><ion-icon name="mail" class="customIcon"></ion-icon></span></a>
+            <a href="#"><span class="parent"><ion-icon name="mail" class="customIcon" [navPush]="contact"></ion-icon></span></a>
         </div>
     </div>
-    <!--<ion-col>
-        <ion-row>
-            <div id="map"></div>
-            <ion-col col-md-3>
-                <div class="inner box1">
-                    <a href="/about.html"><span class="parent"><ion-icon name="person" class="customIcon"></ion-icon></span></a>
-                </div>
-            </ion-col>
-            <ion-col col-md-3>
-                <div class="inner box2">
-                    <a href="#"><span class="parent"><ion-icon id="location"class="customIcon" onclick="showCloseButton('closeBtn');" name="locate"></ion-icon></span></a>
-                </div>
-            </ion-col>
-            <ion-col col-md-3>
-                <div class="inner box3">
-                    <a href="/contact.html"><span class="parent"><ion-icon name="mail" class="customIcon"></ion-icon></span></a>
-                </div>
-            </ion-col>
-        </ion-row>
-    </ion-col>-->
 
     <div style="display: inline-block; margin:15px; margin-left: 27%;">
         <span class="spanPhone" style="position:relative; font-size:25px; font-weight:bold; margin-left:29%;">
@@ -74,7 +54,7 @@
         <span class="city" style="margin-left:50%;">06130 Grasse</span>
     </div>
 
-    <div class="grid">
+    <div class="toto">
         <a href="https://www.facebook.com/profile.php?id=100013942627955" target="_blank">
             <div class="one-one parent">
                 <img class="center-align" src="../../assets/icon/facebook.png" alt="">

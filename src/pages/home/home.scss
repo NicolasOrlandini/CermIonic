@@ -1,5 +1,9 @@
 page-home {
     
+    .scroll-content {
+        padding: 0 !important;
+    }
+
     .toolbar-title-md, .toolbar-title-ios, .toolbar-title-wp {
         font-size: 1.3rem;
     }
@@ -48,7 +52,6 @@ page-home {
 }
 
 .containerParent {
-    margin-left: -16px;
     display: table;
     /*table-layout: fixed;*/
     width: 100%;
@@ -61,15 +64,23 @@ page-home {
 }
 
 .box1 {
+    width: 33.3%;
     background-color: #8a398a;
 }
 
 .box2 {
+    width: 33.3%;
     background-color: #5050f5;
 }
 
 .box3 {
+    width: 33.3%;
     background-color: #cd2e2e;
+}
+
+.card .card-md {
+    margin-left: 10px;
+    padding: 10px;
 }
 
 .customCardView {
@@ -96,7 +107,7 @@ page-home {
 
     @media screen and (max-width: 450px) {
         .customIcon {
-            margin-left: 33% !important;
+            margin-left: 41% !important;
             margin-top: 30% !important;
         }
         .spanPhone {

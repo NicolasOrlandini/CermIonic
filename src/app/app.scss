@@ -15,8 +15,16 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-div.scroll-content {
-    overflow-y: hidden;
+div.content.content-md {
+    overflow: hidden;
+}
+
+div.content.content-ios {
+    overflow: hidden;
+}
+
+div.content.content-wp {
+    overflow: hidden;
 }
 
 /* Footer */
@@ -144,7 +152,7 @@ div {
 }
 
 
-    .white-text {
+    .whiteText {
         color: white !important;
     }
 

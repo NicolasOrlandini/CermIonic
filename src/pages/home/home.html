@@ -40,9 +40,9 @@
         </div>
 
         <div class="inner box2">
-            <a href="#"><span class="parent"><ion-icon id="location"class="customIcon" onclick="showCloseButton('closeBtn');" name="locate"></ion-icon></span></a>
+            <a href="#"><span class="parent"><ion-icon id="location"class="customIcon"  name="locate"></ion-icon></span></a>
         </div>
-
+        <!--onclick="showCloseButton('closeBtn');"-->
         <div class="inner box3">
             <a href="#"><span class="parent"><ion-icon name="mail" class="customIcon" [navPush]="contact"></ion-icon></span></a>
         </div>
@@ -84,3 +84,5 @@
         </a>
     </div>
 </ion-content>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6aB5q3tZJQ6_fy1SxXHOEi2tXd6pKdb8&callback=initMap" async
+    defer></script>

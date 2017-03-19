@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <title>CERM Application</title>
@@ -11,7 +12,7 @@
   <link rel="manifest" href="manifest.json">
   <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
   <meta name="theme-color" content="#4e8ef7">
-  
+
   <!-- cordova.js required for cordova apps -->
   <script src="cordova.js"></script>
 
@@ -27,16 +28,26 @@
   <link href="build/main.css" rel="stylesheet">
 
 </head>
+
 <body>
 
   <!-- Ionic's root component and where the app will load -->
   <ion-app></ion-app>
-
   <!-- The polyfills js is generated during the build process -->
   <script src="build/polyfills.js"></script>
 
   <!-- The bundle js is generated during the build process -->
   <script src="build/main.js"></script>
 
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="geolocalisation.js"></script>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6aB5q3tZJQ6_fy1SxXHOEi2tXd6pKdb8&callback=initMap" async
+    defer></script>
+
+
+
 </body>
+
 </html>

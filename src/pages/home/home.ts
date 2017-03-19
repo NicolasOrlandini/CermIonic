@@ -20,8 +20,7 @@ export class Home {
   creation = Creation;
   skill = Skill;
 
-  constructor(public modalCtrl: ModalController) {
-
-  }
+  constructor() {  
+    }
 
 }

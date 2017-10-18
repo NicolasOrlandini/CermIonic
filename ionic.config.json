@@ -1,6 +1,8 @@
 {
   "name": "CERM Application - CV",
   "app_id": "",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

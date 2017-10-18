@@ -1,61 +1,57 @@
 <ion-header>
     <ion-navbar color="orange">
         <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
+            <ion-icon name="menu"></ion-icon>
+        </button>
         <ion-title>Home</ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <ion-card>
 
-        <ion-item>
-            <ion-avatar item-left>
-                <img src="../../assets/scott.png">
-            </ion-avatar>
-            <h2>Valentin LEON</h2>
-            <p>13 Septembre 1991</p>
-        </ion-item>
+    <div class="infosPerso">
+        <img class="circle avatarHome" src="../../assets/bender.png">
+        <br>
+        <span class="name">Nicolas ORLANDINI</span>
+        <br>
+        <p>10 Mai 1996</p>
+    </div>
 
-        <img width="200" height="150" src="../../assets/bowties.jpg">
-        <ion-fab right top>
-            <button ion-fab mini>
-                <ion-icon name="arrow-down"></ion-icon>
-            </button>
-        </ion-fab>
-
-        <ion-card-content>
-            <p>I wear a fez, Now. Fezzes are cool ! <br><i style="float:right;">- The Eleventh Doctor</i></p>
-        </ion-card-content>
-
-    </ion-card>
-    <button style="position: absolute; margin-left: 5px; margin-top: 5px; display: none; float: right;" id="closeBtn" ion-fab mini>
+    <button style="position: absolute; margin-left: 5px; margin-top: 5px; display: none; float: right;" id="closeBtn" ion-fab
+        mini>
         <ion-icon color="danger" name="close"></ion-icon>
     </button>
     <div class="containerParent">
         <div id="map"></div>
-        <div class="inner box1">
-            <a href="#"><span class="parent"><ion-icon name="person" class="customIcon" [navPush]="about"></ion-icon></span></a>
+        <div class="inner box1 handCursor" [navPush]="about">
+            <span class="parent">
+                <ion-icon name="person" class="customIcon"></ion-icon>
+            </span>
         </div>
 
-        <div class="inner box2">
-            <a href="#"><span class="parent"><ion-icon id="location"class="customIcon"  name="locate"></ion-icon></span></a>
+        <div class="inner handCursor box2">
+            <span class="parent">
+                <ion-icon id="location" class="customIcon" name="locate"></ion-icon>
+            </span>
         </div>
         <!--onclick="showCloseButton('closeBtn');"-->
-        <div class="inner box3">
-            <a href="#"><span class="parent"><ion-icon name="mail" class="customIcon" [navPush]="contact"></ion-icon></span></a>
+        <div class="inner box3 handCursor" [navPush]="contact">
+            <span class="parent">
+                <ion-icon name="mail" class="customIcon"></ion-icon>
+            </span>
         </div>
     </div>
 
-    <div style="width: 100%; display: inline-block; margin-bottom:15px;">
-        <span class="spanPhone" style="position:relative; font-size:25px; font-weight:bold;">
-                <img style="position:relative;" class="circle avatarHome" src="../../assets/bender.png">
-                <br>
-                <span class="logoTel"><ion-icon name="call" class="small iconPhone" style="top:15px;"></ion-icon><span class="telephone"> 06.73.17.49.70</span></span>
-        </span><br>
-        <span class="address" style="margin-left:45%;">31 Avenue Frédéric Mistral</span><br>
-        <span class="city" style="margin-left:50%;">06130 Grasse</span>
+    <div class="infosPerso">
+        <span class="logoTel">
+            <ion-icon name="call" class="small iconPhone" style="top:15px;"></ion-icon>
+            <span class="telephone"> 06.20.70.30.04</span>
+        </span>
+        <br>
+        <br>
+        <span class="address">24 avenue Saint Barthélémy</span>
+        <br>
+        <span class="city">06100 Nice</span>
     </div>
 
     <div>
@@ -77,9 +73,9 @@
             </div>
         </a>
 
-        <a href="https://twitter.com/SinguFuret" target="_blank">
+        <a href="https://github.com/NicolasOrlandini" target="_blank">
             <div class="two-two parent">
-                <img class="center-align" src="../../assets/icon/twitter.png" alt="">
+                <img class="center-align" src="../../assets/icon/github.png" alt="">
             </div>
         </a>
     </div>
